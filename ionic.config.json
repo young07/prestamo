@@ -1,0 +1,7 @@
+{
+  "name": "prestamo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
