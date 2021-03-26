@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button>
+
+      </ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon name="add-outline" size="large" routerLink="/create"></ion-icon>
+    </ion-buttons>
+    <ion-title>Clientes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list *ngFor="let client of clientes | async">
+  <ion-item>
+    <ion-label>
+      <h3>{{client.Nombre + ' ' + client.Apellidos}}</h3>
+    </ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>
